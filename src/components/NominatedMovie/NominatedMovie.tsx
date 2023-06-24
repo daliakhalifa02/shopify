@@ -9,7 +9,7 @@ export const NominatedMovie = ({ id, index, onRemove }: NominatedMovieProps) => 
     ["nominated-movie", id],
     () =>
       axios
-        .get(`http://www.omdbapi.com/?i=${id}&apikey=3d85689c`)
+        .get(`https://www.omdbapi.com/?i=${id}&apikey=3d85689c`)
         .then((res) => {
           console.log(res.data);
           return res.data;
